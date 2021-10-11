@@ -8,13 +8,11 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <div class="wrapper">
       <header class="page-header">
           <h1 class="visuali-hidden">device</h1>
           <a class="logo" title="logo-device">
             <span class="visually-hidden">logo-device</span>
-            <img class="logo-img" src="images/logo.svg" alt="logo-device">
+            <img class="logo-img" src="images/logo.svg" width="145" height="36" alt="logo-device">
           </a>
           <div class="up-row">
             <form action="https://echo.htmlacademy.ru/" method="GET">
@@ -81,7 +79,7 @@
               <ul class="carousel-images-list">
                 <li class="carousel-images-item">
                   <div class="carousel-column">
-                    <img class="slider-image" src="images/slider/slider-1.png" alt="квадрокоптер">
+                    <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
                   </div>
                   <div class="carousel-column">
                     <h3 class="title carousel-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -105,7 +103,7 @@
                 </li>
                 <li class="carousel-images-item">
                   <div class="carousel-column">
-                    <img class="slider-image" src="images/slider/slider-2.png" alt="квадрокоптер">
+                    <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="квадрокоптер">
                   </div>
                   <div class="carousel-column">
                     <h3 class="title carousel-title">Худеем правильно!</h3>
@@ -123,7 +121,7 @@
                 </li>
                 <li class="carousel-images-item">
                   <div class="carousel-column">
-                    <img class="slider-image" src="images/slider/slider-3.png" alt="квадрокоптер">
+                    <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="квадрокоптер">
                   </div>
                   <div class="carousel-column">
                     <h3 class="title carousel-title">Делай селфи, как Бен Стиллер! </h3>
@@ -192,37 +190,37 @@
           <ul class="categories-list"> 
             <li class="categories-item">
               <a href="#"><img class="" src="categories-link" alt="">
-                <img class="categories-img" src="images/categories/Vector1.svg" alt="">
+                <img class="categories-img" src="images/categories/Vector1.svg" width="97" height="55" alt="">
                 <h3 class="categories-title">Виртуальная реальность</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#">
-                <img class="categories-item-img" src="images/categories/Vector2.svg" alt="">
+                <img class="categories-item-img" src="images/categories/Vector2.svg" width="86" height="117" alt="">
                 <h3 class="categories-item-title">Моноподы для селфи</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#">
-                <img class="categories-item-img" src="images/categories/Vector3.svg" alt="">
+                <img class="categories-item-img" src="images/categories/Vector3.svg" width="71" height="87" alt="">
                 <h3 class="categories-item-title">Экшн-камеры</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#">
-                <img class="categories-item-img" src="images/categories/Vector4.svg" alt="">
+                <img class="categories-item-img" src="images/categories/Vector4.svg" width="108" height="65" alt="">
                 <h3 class="categories-item-title">Фитнес-браслеты</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#">
-                <img class="categories-item-img" src="images/categories/Vector5.svg" alt="">
+                <img class="categories-item-img" src="images/categories/Vector5.svg" width="56" height="98" alt="">
                 <h3 class="categories-item-title">Умные часы</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#">
-                <img class="categories-item-img" src="images/categories/Vector6.svg" alt="">
+                <img class="categories-item-img" src="images/categories/Vector6.svg" width="132" height="69" alt="">
                 <h3 class="categories-item-title">Квадрокоптеры</h3>
               </a>
             </li>
@@ -276,12 +274,17 @@
           <div class="container">
             <h2 class="visually-hidden">Информация</h2>
 
-            <div class="service">
-              <a href="#" class="service-button">Доставка</a>
-              <h3 class="info-text">Доставим редкий товар под заказ</h3>
-              <button class="service-info-button" type="button">
-                <span class="visually-hidden">Дополнительная информация</span>
-              </button>
+            <div class="delivery">
+              <h2 class="visually-hidden">Доставка</h2>
+              <div class="delivery-row">
+                <div class="delivery-image-block">
+                  <img class="delivery-ico" src="images/delivery.svg" width="47" height="31" alt="delivery">
+                </div>
+                <h3 class="delivery-title">Доставим редкий товар под заказ</h3>
+                <button class="delivery-tooltip">
+                  <span class="visually-hidden">Дополнительная информация</span>
+                </button>
+              </div>
             </div>
 
             <div class="info-flex">
@@ -337,42 +340,40 @@
             </div>
           </div>
         </section>
-
-        <footer class="page-footer">
-          <h2 class="visually-hidden">Футер сайта</h2>
-          <div class="footer-address">
-            <h2 class="visually-hidden">Адрес</h2>
-            <a >
-              <img src="images/footer-logo.svg" alt="Логотип device" class="footer-logo">
-            </a>
-            <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-          </div>
-
-          <div class="footer-information">
-            <h2 class="visually-hidden">футер инфо</h2>
-            <ul class="footer-menu">
-              <li class="footer-menu-item"><a href="#">Доставка</a></li>
-              <li class="footer-menu-item"><a href="#">Гарантия</a></li>
-              <li class="footer-menu-item"><a href="#">Контакты</a></li>
-            </ul>
-
-            <ul class="footer-social">
-              <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Facebook</span></a></li>
-              <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Instagram</span></a></li>
-              <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Tweeter</span></a></li>
-            </ul>
-          </div>
-
-          <div class="footer-authors">
-            <h2 class="visually-hidden">футер Контакты</h2>
-            <span class="footer-contacts-tel">Тел.: <a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
-            <a class="footer-copyright" href="https://up.htmlacademy.ru/">.htmlacademy</a>
-          </div>
-
-        </footer>
-
       </main>
-    </div>
+
+      <footer class="page-footer">
+        <h2 class="visually-hidden">Футер сайта</h2>
+        <div class="footer-address">
+          <h2 class="visually-hidden">Адрес</h2>
+          <a >
+            <img src="images/footer-logo.svg" width="145" height="36" alt="Логотип device" class="footer-logo">
+          </a>
+          <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        </div>
+
+        <div class="footer-information">
+          <h2 class="visually-hidden">футер инфо</h2>
+          <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="#">Доставка</a></li>
+            <li class="footer-menu-item"><a href="#">Гарантия</a></li>
+            <li class="footer-menu-item"><a href="#">Контакты</a></li>
+          </ul>
+
+          <ul class="footer-social">
+            <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Instagram</span></a></li>
+            <li class="footer-social-item"><a class="button" href="#"><span class="visually-hidden">Tweeter</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-authors">
+          <h2 class="visually-hidden">футер Контакты</h2>
+          <span class="footer-contacts-tel">Тел.: <a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
+          <a class="footer-copyright" href="https://up.htmlacademy.ru/"><img src="images/html-academy.png" width="115" height="33" alt=""></a>
+        </div>
+
+      </footer>
 
   </body>
 </html>
