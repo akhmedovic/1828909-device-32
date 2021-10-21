@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
       <!-- HEADER START -->
-      <header class="page-header">
+      <header class="container page-header">
           
         <a class="logo" title="logo-device">
           <span class="visually-hidden">Магазин Device</span>
@@ -17,15 +17,15 @@
         </a>
         <!-- HEADER-ROW START -->
         <div class="header-row">
-            <form action="https://echo.htmlacademy.ru/" method="POST">
+            <form action="https://echo.htmlacademy.ru/" method="POST" class="header-search">
               <label class="visually-hidden">Поиск</label>
               <button type="submit" id="search-btn">Нажать</button>
               <input type="search" for="search-btn" name="search" placeholder="Поиск по сайту">
             </form>
 
-            <ul class="user-menu">
+            <ul class="user-menu rs-list">
               <li class="user-menu-item">
-                <a class="user-menu-link" href="#">Войти</a>
+                <a class="user-menu-link user-menu-enter" href="#">Войти</a>
               </li>
                 <li class="user-menu-item">
                 <a class="user-menu-link" href="#">Сравнить</a>
@@ -39,10 +39,10 @@
 
         <!-- NAVIGATION START -->
         <nav class="navigation">
-          <ul class="navigation-list">
+          <ul class="navigation-list rs-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Каталог товаров</a>
-              <ul class="sub-menu">
+              <ul class="sub-menu rs-list">
                 <li class="submenu-item">
                   <a href="#" class="submenu-link">Виртуальная реальность</a>
                 </li>
@@ -86,7 +86,7 @@
           <h2 class="visually-hidden">Популярные товары</h2>
           <div class="container carousel">
             <div class="carousel-images">
-              <ul class="carousel-images-list">
+              <ul class="carousel-images-list rs-list">
                 <li class="carousel-images-item">
                   <div class="carousel-column">
                     <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
@@ -95,15 +95,15 @@
                     <h3 class="title carousel-title">Порхает как бабочка, жалит как пчела!</h3>
                     <p class="carousel-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                     <a class="button" href="#">Подробнее</a>
-                    <ul class="desription-feature">
+                    <ul class="description-feature rs-list">
                       <li class="description-feature-item">
-                        <span class="desription-feature-1">
+                        <span class="description-feature-1">
                           <b>800 M</b>
                           Дальность полета
                         </span>
                       </li>
                       <li class="description-feature-item">
-                        <span class="desription-feature-2">
+                        <span class="description-feature-2">
                           <b>50 M</b>
                           Радиус поражения
                         </span>
@@ -119,9 +119,9 @@
                     <h3 class="title carousel-title">Худеем правильно!</h3>
                     <p class="carousel-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                     <a class="button" href="#">Подробнее</a>
-                    <ul class="desription-feature">
+                    <ul class="description-feature rs-list">
                       <li class="description-feature-item">
-                        <span class="desription-feature-1">
+                        <span class="description-feature-1">
                           <b>48 часов</b>
                           Без подзарядки
                         </span>
@@ -137,9 +137,9 @@
                     <h3 class="title carousel-title">Делай селфи, как Бен Стиллер! </h3>
                     <p class="carousel-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                     <a class="button" href="#">Подробнее</a>
-                    <ul class="desription-feature">
+                    <ul class="description-feature rs-list">
                       <li class="description-feature-item">
-                        <p class="desription-feature-1">
+                        <p class="description-feature-1">
                           <b>8,5 м</b>
                           Длина палки
                         </p>
@@ -161,7 +161,7 @@
                 </li>
               </ul>
 
-              <ul class="slider-navigation">
+              <ul class="slider-navigation rs-list">
                 <li class="slider-navigation-item">
                   <button class="slider-navigation-button slider-prev-button">
                     <span class="visually-hidden">Предыдущий слайд</span>
@@ -176,7 +176,7 @@
             </div>
           </div>
 
-          <ol class="slider-dots">
+          <ol class="slider-dots rs-list">
               <li class="slider-dots-item">
                 <button class="slider-dots-button slider-dots-button-current" type="button">
                   <span class="visually-hidden">1 фото</span>
@@ -197,9 +197,9 @@
         <!-- HERO END -->
 
         <!-- CATEGORIES START -->
-        <section class="categories">
+        <section class="categories container">
           <h2 class="visually-hidden">Список категорий</h2>
-          <ul class="container categories-list"> 
+          <ul class="categories-list rs-list"> 
             <li class="categories-item">
               <a href="#" class="categories-item-link">
                 <img class="categories-item-img" src="img/categories/Vector1.svg" width="97" height="55" alt="Виртуальная реальность">
@@ -244,7 +244,7 @@
         <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
           <div class="container services-flex">
-            <ul class="tabs-controls">
+            <ul class="tabs-controls rs-list">
               <li class="tabs-controls-item">
                 <button class="tabs-controls-btn tabs-controls-btn-current button">
                   Доставка
@@ -262,7 +262,7 @@
               </li>
             </ul>
 
-            <ul class="tabs-content">
+            <ul class="tabs-content rs-list">
               <li class="tabs-content-item">
                 <h3 class="title tabs-content-title">Доставка</h3>
                 <p class="tabs-content-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -285,8 +285,8 @@
         <!-- SERVICES END -->
 
         <!-- DELIVERY START -->
-        <section class="delivery">
-          <div class="container delivery-row">
+        <section class="delivery container">
+          <div class="delivery-row">
             <div class="delivery-image-block">
               <img class="delivery-ico" src="img/delivery.svg" width="47" height="31" alt="Доставка">
             </div>
@@ -300,13 +300,13 @@
         <!-- DELIVERY END -->
 
         <!-- COMPANY START -->
-        <div class="company container">
+        <div class="container company">
           <!-- ABOUT START -->
           <section class="about">
             <h2 class="company-title about-title">О нас</h2>
             <p class="company-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p class="company-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-            <ul class="about-list">
+            <ul class="about-list rs-list">
               <li class="about-list-item">Меловые линии</li>
               <li class="about-list-item">СДИК</li>
               <li class="about-list-item">ТоксБерри</li>
@@ -325,7 +325,7 @@
               <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </p>  
             <h3 class="contacts-lead">Время работы</h3>
-            <ul class="contacts-time">
+            <ul class="contacts-time rs-list">
               <li class="contacts-time-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-time-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
@@ -337,15 +337,14 @@
 
         <!-- SUBSCRIPTION START -->
         <section class="subscription">
-          <div class="container">
-            <div class="subscription-top">
+            <div class="container subscription-top">
               <h2 class="title subscription-title">Подпишитесь на рассылку</h2>
               <p class="subscription-text">
                 Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
               </p>
             </div>
 
-            <div class="subscription-bottom">
+            <div class="container subscription-bottom">
               <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label aria-label="Ваш e-mail">
                   <input type="email" name="email" placeholder="Ваш e-mail" required>
@@ -355,15 +354,13 @@
 
               <span class="subscription-info">Это бесплатно</span>
             </div>
-          </div>
         </section>
         <!-- SUBSCRIPTION END -->
       </main>
       <!-- MAIN END -->
 
       <!-- FOOTER START -->
-      <footer class="page-footer">
-        <div class="container">
+      <footer class="container page-footer">
           <div class="footer-address">
             <a class="footer-logo" title="footer-logo-device">
               <span class="visually-hidden">Магазин Device</span>
@@ -373,13 +370,13 @@
           </div>
   
           <div class="footer-information">
-            <ul class="footer-menu">
+            <ul class="footer-menu rs-list">
               <li class="footer-menu-item"><a class="footer-menu-link" href="#">Доставка</a></li>
               <li class="footer-menu-item"><a class="footer-menu-link" href="#">Гарантия</a></li>
               <li class="footer-menu-item"><a class="footer-menu-link" href="#">Контакты</a></li>
             </ul>
   
-            <ul class="social">
+            <ul class="social rs-list">
               <li class="social-item"><a class="social-link" href="#"><span class="visually-hidden">Facebook</span></a></li>
               <li class="social-item"><a class="social-link" href="#"><span class="visually-hidden">Instagram</span></a></li>
               <li class="social-item"><a class="social-link" href="#"><span class="visually-hidden">Twitter</span></a></li>
@@ -405,7 +402,6 @@
               </svg>
             </a>
           </div>
-        </div>
       </footer>
       <!-- FOOTER END -->
   </body>

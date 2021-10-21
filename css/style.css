@@ -1,38 +1,253 @@
+/* СЕКЦИЯ ШРИФТЫ */
 @font-face {
-    font-family: "raleway";
+    font-family: sans-serif;
+    font-family: "Raleway";
     font-weight: 800;
     font-style: normal;
     src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
-    font-family: "rubik";
+    font-family: sans-serif;
+    font-family: "Rubik";
     font-weight: 400;
     font-style: normal;
     src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
-    font-family: "rubik";
+    font-family: sans-serif;
+    font-family: "Rubik";
     font-weight: 700;
     font-style: normal;
     src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
-    font-family: "rubik";
+    font-family: sans-serif;
+    font-family: "Rubik";
     font-weight: 800;
     font-style: normal;
     src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ГЛОБАЛЬНЫЕ СТИЛИ */
+
 body {
+    padding: 0;
+    margin: 0;
+    max-width: 1440px;
     font-family: "rubik", sans-serif;
     font-weight: 400;
-    background-color: #E5E5E5;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #fff;
+    color: #444444;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* ПОВТОРЯЮЩИЕСЯ КЛАССЫ */
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.rs-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rs-indent {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-family: "Raleway";
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
     color: #000;
+}
+
+.categories-item-title {
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #000;
+}
+
+/* КНОПКИ */
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #FFE17F;
+    letter-spacing: 0.2em;
+}
+
+/* HEADER START */
+
+.page-header {
+    width: 1160px;
+}
+
+.header-row {
+    display: flex;
+}
+
+.header-search {
+    width: 480px;
+}
+
+
+.user-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.user-menu-item:nth-child(2) {
+    margin-right: auto;
+}
+
+.navigation {
+    width: 1041px;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+/* CAROUSEL */
+
+.carousel-images-item {
+    display: flex;
+}
+
+.description-feature {
+    display: flex;
+}
+/* CATEGORIES */
+.categories-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-item {
+    width: calc(100% / 6 - 20px);
+}
+
+/* SERVISES */
+
+.services-flex {
+    display: flex;
+}
+
+/* DELIVERY */
+
+.delivery-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* COMPANY */
+
+.company {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ABOUT */
+
+.about {
+    max-width: 560px;
+}
+
+/* CONTACTS */
+
+.contacts {
+    max-width: 560px;
+}
+
+/* SUBSCRIPTION */
+
+.subscription-top {
+    display: flex;
+}
+
+.subscription-bottom {
+    display: flex;
+}
+
+/* FOOTER */
+
+.page-footer {
+    display: flex;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+/* CATALOG */
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-header {
+    display: flex;
+}
+
+.catalog-sort {
+    display: flex;
 }
