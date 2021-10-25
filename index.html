@@ -17,10 +17,14 @@
         </a>
         <!-- HEADER-ROW START -->
         <div class="header-row">
-            <form action="https://echo.htmlacademy.ru/" method="POST" class="header-search">
+            <form class="header-search" action="https://echo.htmlacademy.ru/" method="POST" >
               <label class="visually-hidden">Поиск</label>
-              <button type="submit" id="search-btn">Нажать</button>
-              <input type="search" for="search-btn" name="search" placeholder="Поиск по сайту">
+              <button class="header-search-btn" type="submit" id="search-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
+                </svg>
+              </button>
+              <input class="header-search-input" type="search" for="search-btn" name="search" placeholder="Поиск по сайту">
             </form>
 
             <ul class="user-menu rs-list">
@@ -94,19 +98,19 @@
                   <div class="carousel-column">
                     <h3 class="title carousel-title">Порхает как бабочка, жалит как пчела!</h3>
                     <p class="carousel-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                    <a class="button" href="#">Подробнее</a>
+                    <a class="button carousel-column-btn" href="#"><span>Подробнее</span></a>
                     <ul class="description-feature rs-list">
                       <li class="description-feature-item">
-                        <span class="description-feature-1">
-                          <b>800 M</b>
+                        <p class="description-feature-1">
+                          <p class="description-feature-meaning">800 M</p>
                           Дальность полета
-                        </span>
+                        </p>
                       </li>
                       <li class="description-feature-item">
-                        <span class="description-feature-2">
-                          <b>50 M</b>
+                        <p class="description-feature-2">
+                          <p class="description-feature-meaning">50 M</p>
                           Радиус поражения
-                        </span>
+                        </p>
                       </li>
                     </ul>
                   </div>
@@ -118,7 +122,7 @@
                   <div class="carousel-column">
                     <h3 class="title carousel-title">Худеем правильно!</h3>
                     <p class="carousel-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                    <a class="button" href="#">Подробнее</a>
+                    <a class="button" href="#"><span>Подробнее</span></a>
                     <ul class="description-feature rs-list">
                       <li class="description-feature-item">
                         <span class="description-feature-1">
@@ -136,7 +140,7 @@
                   <div class="carousel-column">
                     <h3 class="title carousel-title">Делай селфи, как Бен Стиллер! </h3>
                     <p class="carousel-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                    <a class="button" href="#">Подробнее</a>
+                    <a class="button" href="#"><span>Подробнее</span></a>
                     <ul class="description-feature rs-list">
                       <li class="description-feature-item">
                         <p class="description-feature-1">
@@ -202,37 +206,49 @@
           <ul class="categories-list rs-list"> 
             <li class="categories-item">
               <a href="#" class="categories-item-link">
-                <img class="categories-item-img" src="img/categories/Vector1.svg" width="97" height="55" alt="Виртуальная реальность">
+                <div class="categories-item-box">
+                  <img class="categories-item-img" src="img/categories/Vector1.svg" width="97" height="55" alt="Виртуальная реальность">
+                </div>
                 <h3 class="categories-item-title">Виртуальная реальность</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#" class="categories-item-link">
-                <img class="categories-item-img" src="img/categories/Vector2.svg" width="86" height="117" alt="Моноподы для селфи">
+                <div class="categories-item-box categories-item-box-bottom">
+                  <img class="categories-item-img" src="img/categories/Vector2.svg" width="86" height="117" alt="Моноподы для селфи">
+                </div>
                 <h3 class="categories-item-title">Моноподы для селфи</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#" class="categories-item-link">
-                <img class="categories-item-img" src="img/categories/Vector3.svg" width="71" height="87" alt="Экшн-камеры">
+                <div class="categories-item-box">
+                  <img class="categories-item-img" src="img/categories/Vector3.svg" width="71" height="87" alt="Экшн-камеры">
+                </div>
                 <h3 class="categories-item-title">Экшн-камеры</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#" class="categories-item-link">
-                <img class="categories-item-img" src="img/categories/Vector4.svg" width="108" height="65" alt="Фитнес-браслеты">
+                <div class="categories-item-box">
+                  <img class="categories-item-img" src="img/categories/Vector4.svg" width="108" height="65" alt="Фитнес-браслеты">
+                </div>
                 <h3 class="categories-item-title">Фитнес-браслеты</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#" class="categories-item-link">
-                <img class="categories-item-img" src="img/categories/Vector5.svg" width="56" height="98" alt="Умные часы">
+                <div class="categories-item-box">
+                  <img class="categories-item-img" src="img/categories/Vector5.svg" width="56" height="98" alt="Умные часы">
+                </div>
                 <h3 class="categories-item-title">Умные часы</h3>
               </a>
             </li>
             <li class="categories-item">
               <a href="#" class="categories-item-link">
-                <img class="categories-item-img" src="img/categories/Vector6.svg" width="132" height="69" alt="Квадрокоптеры">
+                <div class="categories-item-box">
+                  <img class="categories-item-img" src="img/categories/Vector6.svg" width="132" height="69" alt="Квадрокоптеры">
+                </div>
                 <h3 class="categories-item-title">Квадрокоптеры</h3>
               </a>
             </li>
@@ -246,18 +262,18 @@
           <div class="container services-flex">
             <ul class="tabs-controls rs-list">
               <li class="tabs-controls-item">
-                <button class="tabs-controls-btn tabs-controls-btn-current button">
-                  Доставка
+                <button class="button tabs-controls-btn tabs-controls-btn-current">
+                  <span>Доставка</span>
                 </button>
               </li>
               <li class="tabs-controls-item">
                 <button class="tabs-controls-btn button">
-                  Гарантия
+                  <span>Гарантия</span>
                 </button>
               </li>
               <li class="tabs-controls-item">
                 <button class="tabs-controls-btn button">
-                  Кредит
+                  <span>Кредит</span>
                 </button>
               </li>
             </ul>
@@ -286,16 +302,21 @@
 
         <!-- DELIVERY START -->
         <section class="delivery container">
-          <div class="delivery-row">
-            <div class="delivery-image-block">
+          
+            <button class="delivery-image-block">
               <img class="delivery-ico" src="img/delivery.svg" width="47" height="31" alt="Доставка">
-            </div>
+            </button>
             <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
             <button class="delivery-info">
-              <img class="delivery-info-ico" src="./img/info.svg" alt="Информация">
+              <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                <path d="M2 0H0V2H2V0Z" fill="black"/>
+                <path d="M2 4H0V12H2V4Z" fill="black"/>
+                </g>
+              </svg>
               <span class="visually-hidden">Дополнительная информация</span>
             </button>
-           </div>
+           
         </section>
         <!-- DELIVERY END -->
 
@@ -303,13 +324,19 @@
         <div class="container company">
           <!-- ABOUT START -->
           <section class="about">
-            <h2 class="company-title about-title">О нас</h2>
-            <p class="company-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p class="company-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <h2 class="title about-title">О нас</h2>
+            <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             <ul class="about-list rs-list">
-              <li class="about-list-item">Меловые линии</li>
-              <li class="about-list-item">СДИК</li>
-              <li class="about-list-item">ТоксБерри</li>
+              <li class="about-item">
+                <span class="about-item-text">Меловые линии</span>
+              </li>
+              <li class="about-item">
+                <span class="about-item-text">СДИК</span>
+              </li>
+              <li class="about-item">
+                <span class="about-item-text">ТоксБерри</span>
+              </li>
             </ul>
             <a class="button about-button" href="#">Подробнее о нас</a>
           </section>
@@ -317,11 +344,11 @@
 
           <!-- CONTACTS START -->
           <section class="contacts">
-            <h2 class="company-title contacts-title">Контакты</h2>
+            <h2 class="title contacts-title">Контакты</h2>
             <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
             <h3 class="contacts-lead">Интернет-магазин «Девайс»</h3>
             <p class="contacts-address">
-              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
               <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </p>  
             <h3 class="contacts-lead">Время работы</h3>
@@ -346,13 +373,13 @@
 
             <div class="container subscription-bottom">
               <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label aria-label="Ваш e-mail">
-                  <input type="email" name="email" placeholder="Ваш e-mail" required>
-                  <button type="submit">Подписаться</button>
+                <label class="subscription-form-label" aria-label="Ваш e-mail">
+                  <input class="subscription-search" type="email" name="email" placeholder="Ваш e-mail" required>
+                  <button class="button subscription-btn" type="submit">Подписаться</button>
                 </label>
               </form>
 
-              <span class="subscription-info">Это бесплатно</span>
+              <p class="subscription-info">Это бесплатно</p>
             </div>
         </section>
         <!-- SUBSCRIPTION END -->
@@ -360,13 +387,14 @@
       <!-- MAIN END -->
 
       <!-- FOOTER START -->
-      <footer class="container page-footer">
+      <footer class="page-footer">
+        <div class="page-footer-container container">
           <div class="footer-address">
             <a class="footer-logo" title="footer-logo-device">
               <span class="visually-hidden">Магазин Device</span>
               <img class="footer-logo-img" src="./img/footer-logo.svg" width="145" height="36" alt="Магазин Device">
             </a>
-            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </div>
   
           <div class="footer-information">
@@ -377,9 +405,31 @@
             </ul>
   
             <ul class="social rs-list">
-              <li class="social-item"><a class="social-link" href="#"><span class="visually-hidden">Facebook</span></a></li>
-              <li class="social-item"><a class="social-link" href="#"><span class="visually-hidden">Instagram</span></a></li>
-              <li class="social-item"><a class="social-link" href="#"><span class="visually-hidden">Twitter</span></a></li>
+              <li class="social-item">
+                <a class="social-link" href="#">
+                  <svg class="social-icon" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="#444444"/>
+                  </svg>
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="#">
+                  <svg class="social-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="#444444"/>
+                    <path d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z" fill="#444444"/>
+                  </svg>
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="#">
+                  <svg class="social-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.7 0.0999675C11.2 -0.400033 12.3 0.399967 12.9 1.19997C13.4 0.999967 14 0.799967 14.6 0.599967C14.6 1.39997 14.1 1.99997 13.8 2.19997C14.5 2.39997 15 1.79997 15 1.79997C14.9 2.69997 14.1 3.49997 13.6 3.69997C13.4 9.99997 10.8 14.1 4.7 14C4.2 14 4.8 14 4.3 14C4 14 0.6 13.6 0 12.2C2 12.4 3.4 11.8 4.1 11.1C3.3 10.8 1.7 10.7 1.5 8.29997C1.8 8.49997 2 8.59997 2.6 8.49997C1.5 7.69997 0.3 6.99997 0.4 4.99997C0.7 5.29997 1.3 5.49997 1.6 5.39997C1 5.19997 -0.2 2.29997 0.8 0.799967C2.4 2.49997 4.1 4.19997 7.1 4.29997C7.3 2.19997 8.1 0.799967 9.7 0.0999675Z" fill="#444444"/>
+                  </svg>
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
             </ul>
           </div>
   
@@ -402,6 +452,7 @@
               </svg>
             </a>
           </div>
+        </div>
       </footer>
       <!-- FOOTER END -->
   </body>
