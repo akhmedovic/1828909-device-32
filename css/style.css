@@ -299,14 +299,15 @@ img {
 
   .carousel-column-btn {
       margin-top: 30px;
+      margin-bottom: 70px;
   }
   
   .description-feature {
     display: flex; 
-    margin-top: 70px;
+    
 }
 
-.description-feature-item:nth-child(1) {
+.description-feature-item {
     margin-right: 20px;
 }
 
