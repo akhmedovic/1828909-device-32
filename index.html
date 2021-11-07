@@ -19,7 +19,8 @@
   <div class="header-row">
     <form class="header-search" action="https://echo.htmlacademy.ru/" method="POST">
       <label class="visually-hidden" for="search-btn">Поиск</label>
-      <input class="header-search-input" type="search" id="search-btn" name="search" placeholder="Поиск по сайту">
+      <input class="header-search-input" type="search" id="search-btn" name="search" placeholder="Поиск по сайту"
+             required autocomplete="off">
 
       <button class="header-search-btn" type="submit">
         Найти
@@ -49,27 +50,37 @@
 
   <nav class="navigation">
     <ul class="navigation-list rs-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Каталог товаров</a>
+      <li class="navigation-item product-catalog">
+        <a class="navigation-link product-catalog-link" href="#">Каталог товаров</a>
+
         <ul class="sub-menu rs-list">
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Виртуальная реальность</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Моноподы для cелфи</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Экшн-камеры</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Фитнес-браслеты</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Умные часы</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Квадрокоптеры</a>
-          </li>
+          <ul class="sub-menu-column rs-list">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Виртуальная реальность</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Моноподы для cелфи</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Экшн-камеры</a>
+            </li>
+          </ul>
+
+          <ul class="sub-menu-column rs-list">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Фитнес-браслеты</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Умные часы</a>
+            </li>
+          </ul>
+
+          <ul class="sub-menu-column rs-list">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Квадрокоптеры</a>
+            </li>
+          </ul>
+
         </ul>
       </li>
       <li class="navigation-item">
@@ -99,18 +110,6 @@
           <li class="carousel-images-item">
             <div class="carousel-column">
               <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
-              <ul class="slider-navigation rs-list">
-                <li class="slider-navigation-item">
-                  <button class="slider-navigation-button slider-prev-button">
-                    <span class="visually-hidden">Предыдущий слайд</span>
-                  </button>
-                </li>
-                <li class="slider-navigation-item">
-                  <button class="slider-navigation-button slider-next-button">
-                    <span class="visually-hidden">Следующий слайд</span>
-                  </button>
-                </li>
-              </ul>
             </div>
             <div class="carousel-column">
               <h3 class="title carousel-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -131,23 +130,6 @@
                   </p>
                 </li>
               </ul>
-              <ol class="slider-dots rs-list">
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button slider-dots-button-current" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ol>
               <span class="slider-numb">01</span>
             </div>
           </li>
@@ -168,23 +150,6 @@
                   </p>
                 </li>
               </ul>
-              <ol class="slider-dots rs-list">
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button slider-dots-button-current" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ol>
               <span class="slider-numb">02</span>
             </div>
           </li>
@@ -217,29 +182,41 @@
                   </p>
                 </li>
               </ul>
-              <ol class="slider-dots rs-list">
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button slider-dots-button-current" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-dots-item">
-                  <button class="slider-dots-button" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ol>
               <span class="slider-numb">03</span>
             </div>
           </li>
         </ul>
       </div>
     </div>
+    <ul class="slider-navigation rs-list">
+      <li class="slider-navigation-item">
+        <button class="slider-navigation-button slider-prev-button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+      </li>
+      <li class="slider-navigation-item">
+        <button class="slider-navigation-button slider-next-button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+      </li>
+    </ul>
+    <ol class="slider-dots rs-list">
+      <li class="slider-dots-item">
+        <button class="slider-dots-button slider-dots-button-current" type="button">
+          <span class="visually-hidden">1 фото</span>
+        </button>
+      </li>
+      <li class="slider-dots-item">
+        <button class="slider-dots-button" type="button">
+          <span class="visually-hidden">2 фото</span>
+        </button>
+      </li>
+      <li class="slider-dots-item">
+        <button class="slider-dots-button" type="button">
+          <span class="visually-hidden">3 фото</span>
+        </button>
+      </li>
+    </ol>
 
 
   </section>
@@ -334,18 +311,18 @@
             бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
-<!--        <li class="tabs-content-item">-->
-<!--          <h3 class="title tabs-content-title">Гарантия</h3>-->
-<!--          <p class="tabs-content-text">Если из-за возгорания купленного у нас товара у вас-->
-<!--            сгорит дом — не переживайте, мы выдадим вам новый.-->
-<!--            Товар, не дом, конечно же.</p>-->
-<!--        </li>-->
-<!--        <li class="tabs-content-item">-->
-<!--          <h3 class="title tabs-content-title">Кредит</h3>-->
-<!--          <p class="tabs-content-text">Залезть в долговую яму стало проще!-->
-<!--            Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,-->
-<!--            разумеется.</p>-->
-<!--        </li>-->
+        <!--        <li class="tabs-content-item">-->
+        <!--          <h3 class="title tabs-content-title">Гарантия</h3>-->
+        <!--          <p class="tabs-content-text">Если из-за возгорания купленного у нас товара у вас-->
+        <!--            сгорит дом — не переживайте, мы выдадим вам новый.-->
+        <!--            Товар, не дом, конечно же.</p>-->
+        <!--        </li>-->
+        <!--        <li class="tabs-content-item">-->
+        <!--          <h3 class="title tabs-content-title">Кредит</h3>-->
+        <!--          <p class="tabs-content-text">Залезть в долговую яму стало проще!-->
+        <!--            Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка,-->
+        <!--            разумеется.</p>-->
+        <!--        </li>-->
       </ul>
     </div>
   </section>
@@ -353,21 +330,22 @@
 
   <!-- DELIVERY START -->
   <section class="delivery container">
-
-    <button class="delivery-image-block">
-      <img class="delivery-ico" src="img/delivery.svg" width="47" height="31" alt="Доставка">
-    </button>
-    <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
-    <button class="delivery-info">
-      <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g opacity="0.3">
-          <path d="M2 0H0V2H2V0Z" fill="black"/>
-          <path d="M2 4H0V12H2V4Z" fill="black"/>
-        </g>
-      </svg>
-      <span class="visually-hidden">Дополнительная информация</span>
-    </button>
-
+    <a href="#" class="delivery-link">
+      <div class="delivery-image-block">
+        <img class="delivery-ico" src="img/delivery.svg" width="47" height="31" alt="Доставка">
+      </div>
+      <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
+      <div class="delivery-info">
+        <svg class="delivery-info-svg" width="2" height="12" viewBox="0 0 2 12" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.3">
+            <path d="M2 0H0V2H2V0Z" fill="black"/>
+            <path d="M2 4H0V12H2V4Z" fill="black"/>
+          </g>
+        </svg>
+        <span class="visually-hidden">Дополнительная информация</span>
+      </div>
+    </a>
   </section>
   <!-- DELIVERY END -->
 
