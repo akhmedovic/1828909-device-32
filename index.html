@@ -108,10 +108,10 @@
       <div class="carousel-images">
         <ul class="carousel-images-list rs-list">
           <li class="carousel-images-item">
-            <div class="carousel-column">
+            <div class="carousel-column carousel-column-left">
               <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="квадрокоптер">
             </div>
-            <div class="carousel-column">
+            <div class="carousel-column carousel-column-right">
               <h3 class="title carousel-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="carousel-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
@@ -134,10 +134,10 @@
             </div>
           </li>
           <li class="carousel-images-item">
-            <div class="carousel-column">
+            <div class="carousel-column carousel-column-left">
               <img class="slider-image" src="img/slider/slider-2.png" width="560" height="560" alt="квадрокоптер">
             </div>
-            <div class="carousel-column">
+            <div class="carousel-column carousel-column-right">
               <h3 class="title carousel-title">Худеем правильно!</h3>
               <p class="carousel-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
                 соблюдать диету.</p>
@@ -154,10 +154,10 @@
             </div>
           </li>
           <li class="carousel-images-item">
-            <div class="carousel-column">
+            <div class="carousel-column carousel-column-left">
               <img class="slider-image" src="img/slider/slider-3.png" width="560" height="560" alt="квадрокоптер">
             </div>
-            <div class="carousel-column">
+            <div class="carousel-column carousel-column-right">
               <h3 class="title carousel-title">Делай селфи, как Бен Стиллер! </h3>
               <p class="carousel-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
                 метров длиной и весом всего 5 кг.</p>
@@ -187,36 +187,46 @@
           </li>
         </ul>
       </div>
+      <ul class="slider-list-btn rs-list">
+
+        <li class="slider-navigation-item">
+          <button class="slider-navigation-button slider-prev-button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
+            </svg>
+          </button>
+        </li>
+
+        <li class="slider-navigation-item">
+          <button class="slider-navigation-button slider-next-button">
+            <span class="visually-hidden">Следующий слайд</span>
+            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black"/>
+            </svg>
+          </button>
+        </li>
+
+      </ul>
+      <ol class="slider-dots rs-list">
+        <li class="slider-dots-item">
+          <button class="slider-dots-button slider-dots-button-current" type="button">
+            <span class="visually-hidden">1 фото</span>
+          </button>
+        </li>
+        <li class="slider-dots-item">
+          <button class="slider-dots-button" type="button">
+            <span class="visually-hidden">2 фото</span>
+          </button>
+        </li>
+        <li class="slider-dots-item">
+          <button class="slider-dots-button" type="button">
+            <span class="visually-hidden">3 фото</span>
+          </button>
+        </li>
+      </ol>
     </div>
-    <ul class="slider-navigation rs-list">
-      <li class="slider-navigation-item">
-        <button class="slider-navigation-button slider-prev-button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-      </li>
-      <li class="slider-navigation-item">
-        <button class="slider-navigation-button slider-next-button">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
-      </li>
-    </ul>
-    <ol class="slider-dots rs-list">
-      <li class="slider-dots-item">
-        <button class="slider-dots-button slider-dots-button-current" type="button">
-          <span class="visually-hidden">1 фото</span>
-        </button>
-      </li>
-      <li class="slider-dots-item">
-        <button class="slider-dots-button" type="button">
-          <span class="visually-hidden">2 фото</span>
-        </button>
-      </li>
-      <li class="slider-dots-item">
-        <button class="slider-dots-button" type="button">
-          <span class="visually-hidden">3 фото</span>
-        </button>
-      </li>
-    </ol>
+
 
 
   </section>
@@ -293,7 +303,7 @@
           </button>
         </li>
         <li class="tabs-controls-item">
-          <button class="tabs-controls-btn button">
+          <button class="button tabs-controls-btn ">
             <span>Гарантия</span>
           </button>
         </li>

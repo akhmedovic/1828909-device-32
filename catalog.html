@@ -10,7 +10,8 @@
 <body>
 <!-- HEADER START -->
 <header class="container page-header">
-  <a class="logo" href="index.html" title="logo-device">
+
+  <a class="logo" title="logo-device">
     <span class="visually-hidden">Магазин Device</span>
     <img class="logo-img" src="./img/logo.svg" width="145" height="36" alt="Магазин Device">
   </a>
@@ -18,54 +19,71 @@
   <div class="header-row">
     <form class="header-search" action="https://echo.htmlacademy.ru/" method="POST">
       <label class="visually-hidden" for="search-btn">Поиск</label>
-      <input class="header-search-input" type="search" id="search-btn" name="search" placeholder="Поиск по сайту">
+      <input class="header-search-input" type="search" id="search-btn" name="search" placeholder="Поиск по сайту"
+             required autocomplete="off">
 
       <button class="header-search-btn" type="submit">
         Найти
       </button>
     </form>
 
-    <ul class="user-menu profile">
+    <ul class="user-menu rs-list">
       <li class="user-menu-item">
-        <a href="#" class="user-menu-link">Коля Петухов</a>
+        <a href="#" class="user-menu-link user-menu-link-enter">Коля Петухов</a>
       </li>
       <li class="user-menu-item">
         <a href="#" class="user-menu-link user-menu-link-exit">Выйти</a>
       </li>
-      <li class="user-menu-item">
-        <a href="#" class="user-menu-link">Сравнить</a>
+
+      <li class="user-menu-item user-menu-item-compare">
+        <a class="user-menu-link user-menu-link-compare" href="#">Сравнить</a>
       </li>
-      <li class="user-menu-item">
-        <a href="#" class="user-menu-link user-menu-link-basket">Карзина</a>
+
+      <li class="user-menu-item user-menu-item-basket">
+        <a class="user-menu-link user-menu-link-basket" href="#">
+          <span class="user-menu-item-numb">2</span>
+          Корзина
+        </a>
       </li>
     </ul>
   </div>
   <!-- HEADER-ROW END -->
 
   <!-- NAVIGATION START -->
+
   <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Каталог товаров</a>
-        <ul class="sub-menu">
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Виртуальная реальность</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Моноподы для cелфи</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Экшн-камеры</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Фитнес-браслеты</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Умные часы</a>
-          </li>
-          <li class="submenu-item">
-            <a href="#" class="submenu-link">Квадрокоптеры</a>
-          </li>
+    <ul class="navigation-list rs-list">
+      <li class="navigation-item product-catalog">
+        <a class="navigation-link product-catalog-link" href="#">Каталог товаров</a>
+
+        <ul class="sub-menu rs-list">
+          <ul class="sub-menu-column rs-list">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Виртуальная реальность</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Моноподы для cелфи</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Экшн-камеры</a>
+            </li>
+          </ul>
+
+          <ul class="sub-menu-column rs-list">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Фитнес-браслеты</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Умные часы</a>
+            </li>
+          </ul>
+
+          <ul class="sub-menu-column rs-list">
+            <li class="submenu-item">
+              <a href="#" class="submenu-link">Квадрокоптеры</a>
+            </li>
+          </ul>
+
         </ul>
       </li>
       <li class="navigation-item">
@@ -84,12 +102,12 @@
 <!-- HEADER END -->
 
 <!-- MAIN START -->
-<main class="inner-main">
+<main class="inner-main container">
   <!-- HEADER-MAIN START -->
   <header class="page-intro">
     <h1 class="title page-title">Моноподы для селфи</h1>
 
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs rs-list">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">Главная</a>
       </li>
@@ -119,7 +137,7 @@
           </select>
         </form>
 
-        <ul class="catalog-direction">
+        <ul class="catalog-direction rs-list">
           <li class="catalog-direction-item">
             <a href="#" class="catalog-direction-link catalog-direction-link-up ">
               <span class="visually-hidden">Показать по-возрастанию</span>
@@ -164,7 +182,7 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цвет</legend>
-          <ul class="catalog-filter-list">
+          <ul class="catalog-filter-list rs-list">
             <li class="catalog-filter-item">
               <label class="catalog-filter-label">
                 <input class="visually-hidden" type="checkbox" name="black" checked>
@@ -205,7 +223,7 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Bluetooth</legend>
-          <ul class="catalog-filter-list">
+          <ul class="catalog-filter-list rs-list">
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="visually-hidden color-input" type="radio" name="Bluetooth" value="Yes" checked>
@@ -225,7 +243,7 @@
         <button class="button" type="submit">Показать</button>
       </form>
       <div class="catalog-result">
-        <ul class="catalog-result-list">
+        <ul class="catalog-result-list rs-list">
           <li class="card">
             <div class="card-header">
               <a class="card-link" href="product.html">
@@ -300,7 +318,7 @@
         </ul>
         <button class="button show-more" type="button">Загрузить еще</button>
         <!-- PAGINATION START -->
-        <ul class="pagination-list">
+        <ul class="pagination-list rs-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
           </li>
@@ -438,3 +456,4 @@
 <!-- FOOTER END -->
 </body>
 </html>
+
