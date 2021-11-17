@@ -37,7 +37,7 @@
 
       <li class="user-menu-item user-menu-item-compare">
         <a class="user-menu-link user-menu-link-compare" href="#">
-          <img class="user-menu-link-ico" src="img/svg/compare.svg" alt="Войти" width="10" height="12">
+          <img class="user-menu-link-ico" src="img/svg/compare.svg" alt="Сравнить" width="10" height="12">
           <span class="user-menu-link-text">Сравнить</span>
         </a>
       </li>
@@ -45,9 +45,42 @@
       <li class="user-menu-item user-menu-item-basket">
         <a class="user-menu-link user-menu-link-basket" href="#">
           <span class="user-menu-item-numb">2</span>
-          <img class="user-menu-link-ico" src="img/svg/basket.svg" alt="Войти" width="16" height="14">
+          <img class="user-menu-link-ico" src="img/svg/basket.svg" alt="Корзина" width="16" height="14">
           <span class="user-menu-link-text">Корзина</span>
-
+          <div class="popover popover-cart">
+            <h2 class="visually-hidden">Корзина</h2>
+            <ul class="cart-items-list rs-list">
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="cart-item-image" src="img/catalog/product-1-small.svg" width="41" height="43"
+                       alt="Любительская селфи-палка">
+                  <span class="cart-item-title ">Любительская селфи-палка</span>
+                </a>
+                <button class="cart-item-button" type="button">
+                  <img class="cart-item-icon" src="img/svg/delete-white.svg" width="11" height="11" alt="Закрыть">
+                </button>
+              </li>
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="cart-item-image" src="img/catalog/product-2-small.svg" width="41" height="43"
+                       alt="Любительская селфи-палка">
+                  <span class="cart-item-title">Профессиональная селфи-палка</span>
+                </a>
+                <button class="cart-item-button" type="button">
+                  <img class="cart-item-icon" src="img/svg/delete-white.svg" width="11" height="11" alt="Закрыть">
+                </button>
+              </li>
+            </ul>
+            <div class="cart-result">
+              <p class="cart-result-text">Товаров: 2</p>
+              <p class="cart-result-text">Сумма: 2000 ₽</p>
+            </div>
+            <div class="cart-button-wrapper">
+              <button class="button cart-button" type="button">
+                Открыть корзину
+              </button>
+            </div>
+          </div>
         </a>
       </li>
     </ul>
@@ -439,7 +472,7 @@
 
       <ul class="social rs-list">
         <li class="social-item">
-          <a class="social-link footer-link" href="#">
+          <a class="social-link footer-link" href="https://www.facebook.com/htmlacademy">
             <svg class="social-icon" width="9" height="18" viewBox="0 0 9 18" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="none"/>
@@ -448,7 +481,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link footer-link" href="#">
+          <a class="social-link footer-link" href="https://www.instagram.com/htmlacademy/">
             <svg class="social-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -462,7 +495,7 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link footer-link" href="#">
+          <a class="social-link footer-link" href="https://twitter.com/htmlacademy_ru">
             <svg class="social-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -520,5 +553,69 @@
   </div>
 </footer>
 <!-- FOOTER END -->
+
+<!--МОДАЛЬНОЕ ОКНО-->
+<div class="modal-container">
+  <div class="modal">
+    <h2 class="modal-title reset-indent title-1">Доставка под заказ</h2>
+
+    <button class="modal-close-button">
+      <img class="modal-close-icon" src="img/svg/delete.svg" width="26" height="26" alt="Закрыть">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+
+    <form class="order-form" action="https://echo.htmlacademy.ru/" method="POST">
+      <div class="field-group order-form-name">
+        <label class="form-label" for="order-name">
+          Ваше имя:
+        </label>
+        <input class="field field-error" type="text" id="order-name" name="order-name" placeholder="Имя Фамилия" required>
+        <span class="field-subtitle field-subtitle-red">Пожалуйста, представьтесь</span>
+      </div>
+      <div class="field-group order-form-email">
+        <label class="form-label" for="order-email">
+          Ваш e-mail:
+        </label>
+        <input class="field field-error" type="text" id="order-email" name="order-email" placeholder="krasotka92@mail.ru"
+               required>
+        <span class="field-subtitle">Забавный у вас адрес</span>
+      </div>
+      <div class="field-group order-form-what">
+        <label class="form-label" for="order-what">
+          Что нужно привезти:
+        </label>
+        <input class="field field-error" type="text" id="order-what" name="order-what" placeholder="В свободной форме" required>
+      </div>
+      <div class="field-group order-form-quantity">
+        <label class="form-label" for="order-quantity">
+          Количество:
+        </label>
+        <button class="button-info" type="button">i</button>
+
+        <div class="info-hint">
+          <p class="info-hint-text reset-indent">Постараемся найти, сколько нужно. Привезём сколько получится по
+            требованиям
+            к провозу багажа.</p>
+        </div>
+
+        <span class="visually-hidden">Кнопка информация</span>
+        <div class="quantity-block">
+          <button class="btn-quantity minus" type="button"></button>
+          <span class="visually-hidden">Кнопка минус</span>
+          <input class="quantity" type="number" id="order-quantity" name="order-quantity" value="1">
+          <button class="btn-quantity plus" type="button"></button>
+          <span class="visually-hidden">Кнопка плюс</span>
+        </div>
+      </div>
+      <button class="button button-order-submit" type="submit">Отправить</button>
+      <span class="visually-hidden">Кнопка отправить</span>
+      <div class="popover popover-info visually-hidden">
+        <p class="popover-info-text">
+          Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
 </body>
 </html>
