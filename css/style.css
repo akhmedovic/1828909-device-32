@@ -2126,7 +2126,7 @@ padding: 10px 17px;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
   transition: all 0.25s ease;
-  display: block;
+  display: none;
 }
 
 .user-menu-cart:hover .popover {
@@ -2278,11 +2278,7 @@ padding: 10px 17px;
 }
 
 .overlay-close {
-  display: flex;
-}
-
-.overlay-open {
-  display: flex;
+  display: none;
 }
 
 .modal {
