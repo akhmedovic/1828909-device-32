@@ -11,7 +11,7 @@
 <!-- HEADER START -->
 <header class="container page-header catalog-header">
 
-  <a class="logo" title="Магазин Device">
+  <a href="index.html" class="logo" title="Магазин Device">
     <span class="visually-hidden">Магазин Device</span>
     <img class="logo-img" src="img/svg/logo.svg" width="145" height="36" alt="Магазин Device">
   </a>
@@ -124,7 +124,7 @@
         <a class="breadcrumbs-link" href="#">Каталог товаров</a>
       </li>
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link">Моноподы для селфи</a>
+        <a class="breadcrumbs-link breadcrumbs-link-current">Моноподы для селфи</a>
       </li>
     </ul>
   </header>
@@ -156,10 +156,12 @@
 
             <div class="range-wrapper-inputs">
               <label class="catalog-filter-label">
-                от <input class="range-input" type="number" value="0" name="min-price">
+                <input class="range-input" type="number" value="0" name="min-price">
+                <span class="catalog-filter-text">от</span>
               </label>
               <label class="catalog-filter-label">
-                до <input class="range-input range-input-right" type="number" value="5000" name="max-price">
+                <input class="range-input range-input-right" type="number" value="5000" name="max-price">
+                <span class="catalog-filter-text">до</span>
               </label>
             </div>
           </fieldset>
@@ -198,9 +200,7 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="pink">
-                  <span class="control-mark">
-<!--                    <img class="control-mark-img" width="10" height="10" src="img/svg/tick.svg" alt="check">-->
-                  </span>
+                  <span class="control-mark"></span>
                   <span class="control-label">Розовый</span>
                 </label>
               </li>
@@ -273,15 +273,15 @@
               <img class="product-card-image" src="img/catalog/product-1.png" width="360" height="380"
                    alt="Любительская селфи-палка">
               <div class="product-card-overlay">
-                <span class="button link-detailed">Подробнее</span>
-              </div>
-              <div class="product-card-body">
-                <h3 class="product-card-title">
-                  Любительская селфи-палка
-                </h3>
-                <p class="product-card-price">500 ₽</p>
+                <span class="button button-hover">Подробнее</span>
               </div>
             </a>
+            <div class="product-card-body">
+              <h3 class="product-card-title">
+                <a class="product-card-link" href="#">Любительская селфи-палка</a>
+              </h3>
+              <p class="product-card-price">500 ₽</p>
+            </div>
           </li>
 
           <li class="product-card">
@@ -289,15 +289,15 @@
               <img class="product-card-image" src="img/catalog/product-2.png" width="360" height="380"
                    alt="Профессиональная селфи-палка">
               <div class="product-card-overlay">
-                <span class="button link-detailed">Подробнее</span>
-              </div>
-              <div class="product-card-body">
-                <h3 class="product-card-title">
-                  Профессиональная селфи-палка
-                </h3>
-                <p class="product-card-price">1 500 ₽</p>
+                <span class="button button-hover">Подробнее</span>
               </div>
             </a>
+            <div class="product-card-body">
+              <h3 class="product-card-title">
+                <a class="product-card-link" href="#">Профессиональная <br>селфи-палка</a>
+              </h3>
+              <p class="product-card-price">1 500 ₽</p>
+            </div>
           </li>
 
           <li class="product-card">
@@ -305,15 +305,15 @@
               <img class="product-card-image" src="img/catalog/product-3.png" width="360" height="380"
                    alt="Непотопляемая селфи-палка">
               <div class="product-card-overlay">
-                <span class="button link-detailed">Подробнее</span>
-              </div>
-              <div class="product-card-body">
-                <h3 class="product-card-title">
-                  Непотопляемая селфи-палка
-                </h3>
-                <p class="product-card-price">2 500 ₽</p>
+                <span class="button button-hover">Подробнее</span>
               </div>
             </a>
+            <div class="product-card-body">
+              <h3 class="product-card-title">
+                <a class="product-card-link" href="#">Непотопляемая <br>селфи-палка</a>
+              </h3>
+              <p class="product-card-price">2 500 ₽</p>
+            </div>
           </li>
 
           <li class="product-card product-card-new">
@@ -321,15 +321,15 @@
               <img class="product-card-image" src="img/catalog/product-4.png" width="360" height="380"
                    alt="Селфи-палка «Следуй за мной»">
               <div class="product-card-overlay">
-                <span class="button link-detailed">Подробнее</span>
-              </div>
-              <div class="product-card-body">
-                <h3 class="product-card-title">
-                  Селфи-палка «Следуй за мной»
-                </h3>
-                <p class="product-card-price">4 900 ₽</p>
+                <span class="button button-hover">Подробнее</span>
               </div>
             </a>
+            <div class="product-card-body">
+              <h3 class="product-card-title">
+                <a class="product-card-link" href="#">Селфи-палка «Следуй за <br> мной»</a>
+              </h3>
+              <p class="product-card-price">4 900 ₽</p>
+            </div>
           </li>
         </ul>
         <button class="pagination-show-more">Загрузить ещё</button>
@@ -373,7 +373,7 @@
 <footer class="page-footer">
   <div class="page-footer-container container">
     <div class="footer-address">
-      <a class="footer-logo" title="footer-logo-device">
+      <a href="index.html" class="footer-logo" title="footer-logo-device">
         <span class="visually-hidden">Магазин Device</span>
         <img class="footer-logo-img" src="./img/svg/footer-logo.svg" width="145" height="36" alt="Магазин Device">
       </a>

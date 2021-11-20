@@ -19,7 +19,7 @@
   <div class="header-row">
     <form class="header-search" action="https://echo.htmlacademy.ru/" method="POST">
       <label class="visually-hidden" for="search-btn">Поиск</label>
-      <input class="header-search-input" type="search" id="search-btn" name="search" placeholder="Поиск по сайту"
+      <input class="header-search-input" type="text" id="search-btn" name="search" placeholder="Поиск по сайту"
              required autocomplete="off">
 
       <button class="header-search-btn" type="submit">
@@ -49,7 +49,7 @@
           <span class="user-menu-link-text">Корзина</span>
         </a>
         <div class="popover popover-cart">
-          <h2 class="visually-hidden">Корзина</h2>
+          <span class="visually-hidden">Корзина</span>
           <ul class="cart-items-list rs-list">
             <li class="cart-item">
               <a class="cart-item-link" href="#">
@@ -94,13 +94,13 @@
       <li class="navigation-item product-catalog">
         <a class="navigation-link product-catalog-link" href="#">Каталог товаров</a>
 
-        <div class="sub-menu rs-list">
+        <div class="sub-menu">
           <ul class="sub-menu-column rs-list">
             <li class="sub-menu-item">
               <a href="#" class="sub-menu-link">Виртуальная реальность</a>
             </li>
             <li class="sub-menu-item">
-              <a href="#" class="sub-menu-link">Моноподы для cелфи</a>
+              <a href="catalog.html" class="sub-menu-link">Моноподы для cелфи</a>
             </li>
             <li class="sub-menu-item">
               <a href="#" class="sub-menu-link">Экшн-камеры</a>
@@ -278,7 +278,7 @@
             <img class="categories-item-img" src="img/categories/Vector2.svg" width="86" height="117"
                  alt="Моноподы для селфи">
           </div>
-          <h3 class="categories-item-title">Моноподы для селфи</h3>
+          <h3 class="categories-item-title">Моноподы<br> для селфи</h3>
         </a>
       </li>
       <li class="categories-item">
@@ -326,17 +326,17 @@
       <ul class="tabs-controls rs-list">
         <li class="tabs-controls-item">
           <button class="button tabs-controls-btn tabs-controls-btn-current">
-            <span>Доставка</span>
+            Доставка
           </button>
         </li>
         <li class="tabs-controls-item">
           <button class="button tabs-controls-btn ">
-            <span>Гарантия</span>
+            Гарантия
           </button>
         </li>
         <li class="tabs-controls-item">
           <button class="tabs-controls-btn button">
-            <span>Кредит</span>
+            Кредит
           </button>
         </li>
       </ul>
@@ -508,7 +508,7 @@
     </div>
 
     <div class="footer-authors">
-      <a class="footer-phone footer-link" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+      <a class="footer-phone footer-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <a class="footer-copyright footer-link" href="https://up.htmlacademy.ru/">
         <svg class="footer-copyright-svg" width="115" height="34" viewBox="0 0 115 34" fill="none"
              xmlns="http://www.w3.org/2000/svg">
@@ -554,67 +554,67 @@
 <!-- FOOTER END -->
 
 <!--МОДАЛЬНОЕ ОКНО-->
-<div class="modal-container">
-  <div class="modal">
-    <h2 class="modal-title reset-indent title-1">Доставка под заказ</h2>
+<div class="overlay overlay-close">
+  <section class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">Доставка под заказ</h2>
+      <button class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+        <img class="modal-close-icon" src="img/svg/delete.svg" width="26" height="26" alt="Закрыть">
+      </button>
+    </div>
 
-    <button class="modal-close-button">
-      <img class="modal-close-icon" src="img/svg/delete.svg" width="26" height="26" alt="Закрыть">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
+    <form class="modal-form" action="#">
+      <div class="modal-form-group">
+        <label class="modal-form-label" for="username">Ваше имя:</label>
+        <input class="modal-form-field modal-form-field-name modal-form-error" type="text" name="username"
+               id="username" placeholder="Имя Фамилия" required>
+        <p class="modal-message modal-message-error">Пожалуйста, представьтесь</p>
+      </div>
+      <div class="modal-form-group">
+        <label class="modal-form-label" for="email">Ваш e-mail:</label>
+        <input class="modal-form-field modal-form-field-email" type="email" name="email" id="email"
+               placeholder="krasotka92@mail.ru" required>
+        <p class="modal-message">Забавный у вас адрес</p>
+      </div>
+      <div class="modal-form-group modal-form-order">
+        <label class="modal-form-label" for="order">Что нужно привезти:</label>
+        <input class="modal-form-field" type="text" name="order" id="order" placeholder="В свободной форме" required>
+        <p class="modal-message"></p>
+      </div>
+      <div class="modal-form-group modal-form-quantity">
+        <div class="modal-form-hint">
+          <label class="modal-form-label modal-form-label-hint" for="count">Количество:</label>
+          <span class="hint">
+              <img src="img/svg/info.svg" alt="Подсказка" width="2" height="12">
+            </span>
+          <p class="hint-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+            требованиям к провозу багажа.</p>
 
-    <form class="order-form" action="https://echo.htmlacademy.ru/" method="POST">
-      <div class="field-group order-form-name">
-        <label class="form-label" for="order-name">
-          Ваше имя:
-        </label>
-        <input class="field field-error" type="text" id="order-name" name="order-name" placeholder="Имя Фамилия" required>
-        <span class="field-subtitle field-subtitle-red">Пожалуйста, представьтесь</span>
-      </div>
-      <div class="field-group order-form-email">
-        <label class="form-label" for="order-email">
-          Ваш e-mail:
-        </label>
-        <input class="field field-error" type="text" id="order-email" name="order-email" placeholder="krasotka92@mail.ru"
-               required>
-        <span class="field-subtitle">Забавный у вас адрес</span>
-      </div>
-      <div class="field-group order-form-what">
-        <label class="form-label" for="order-what">
-          Что нужно привезти:
-        </label>
-        <input class="field field-error" type="text" id="order-what" name="order-what" placeholder="В свободной форме" required>
-      </div>
-      <div class="field-group order-form-quantity">
-        <label class="form-label" for="order-quantity">
-          Количество:
-        </label>
-        <button class="button-info" type="button">i</button>
-
-        <div class="info-hint">
-          <p class="info-hint-text reset-indent">Постараемся найти, сколько нужно. Привезём сколько получится по
-            требованиям
-            к провозу багажа.</p>
         </div>
-
-        <span class="visually-hidden">Кнопка информация</span>
-        <div class="quantity-block">
-          <button class="btn-quantity minus" type="button"></button>
-          <span class="visually-hidden">Кнопка минус</span>
-          <input class="quantity" type="number" id="order-quantity" name="order-quantity" value="1">
-          <button class="btn-quantity plus" type="button"></button>
-          <span class="visually-hidden">Кнопка плюс</span>
+        <div class="modal-form-counter">
+          <button class="counter-button modal-form-down" type="button">
+            <svg class="counter-button-icon" width="16" height="16" viewBox="0 0 16 16"
+                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Уменьшить">
+              <path d="M16 7H0V9H16V7Z" />
+            </svg>
+          </button>
+          <input class="modal-form-field modal-form-field-number" type="number" name="count" id="count" min="1"
+                 step="1" placeholder="1">
+          <button class="counter-button modal-form-up" type="button">
+            <svg class="counter-button-icon" width="16" height="16" viewBox="0 0 16 16"
+                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Прибавить">
+              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
+            </svg>
+          </button>
         </div>
+        <p class="modal-message"></p>
       </div>
-      <button class="button button-order-submit" type="submit">Отправить</button>
-      <span class="visually-hidden">Кнопка отправить</span>
-      <div class="popover popover-info visually-hidden">
-        <p class="popover-info-text">
-          Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
-        </p>
+      <div class="modal-form-group">
+        <button class="button button-modal" type="submit">Отправить</button>
       </div>
     </form>
-  </div>
+  </section>
 </div>
 </body>
 </html>
