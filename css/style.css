@@ -1278,6 +1278,7 @@ padding: 10px 17px;
 .footer-logo {
   display: block;
   margin-bottom: 35px;
+  outline: none;
 }
 
 .footer-address-text {
@@ -1488,6 +1489,7 @@ padding: 10px 17px;
   margin: 0;
   max-width: 268px;
   min-width: 268px;
+  padding-right: 20px;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -1903,11 +1905,16 @@ padding: 10px 17px;
 
 .range-input-right {
   width: 44px;
+  -moz-appearance: none;
+  -moz-appearance:textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
+
+  -webkit-appearance: none;
+
   margin: 0;
 }
 
